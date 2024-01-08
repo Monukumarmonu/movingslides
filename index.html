@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <style>
+        body {
+            overflow: hidden;
+            background-color: grey;
+            margin: 0px;
+            padding: 0px;
+            background-image: url('image/logo2.jpg');
+            background-position: center;
+            /* background-size: cover; */
+        }
+
+        img {
+            width: 100vw;
+            height: 600px;
+            position: relative;
+            overflow: scroll;
+            border-radius: 20px;
+            background-position: center;
+            background-size: cover;
+            margin: 20px;
+            transition: all 1s ease-in-out;
+            box-shadow: 5px 5px 40px 20px black;
+            /*  bhai ye first time me hi kyu nahi apply ho raha hai  */
+        }
+
+        #btndiv {
+            position: relative;
+            top: -319px;
+            display: block;
+            border-radius: 10px;
+        }
+
+        #forward {
+            position: absolute;
+            right: 1px;
+            background-color: red;
+            color: white;
+            height: 40px;
+            border-radius: 20px;
+        }
+
+        #back {
+            background-color: black;
+            color: white;
+            height: 40px;
+            border-radius: 20px;
+        }
+
+        #flex{
+            background-color: #00000026;
+            border-radius: 100px;
+            display: flex;
+            position: relative;
+            bottom: 100px;
+            margin: auto;
+            width: fit-content;
+        }
+
+        #monu{
+            background-color:grey;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            display: block;
+            margin: 10px;
+            position: relative;
+            /* transition: all 1s ease-in-out; */
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <a href="https://www.youtube.com/">
+        <img src="image/bulkfood.jpg" alt="">
+    </a>
+    <div id="btndiv">
+        <button id="forward">Forward</button>
+        <button id="back">Backward</button>
+    </div>
+<div id="flex">    
+    <div id="monu" class="one"></div>
+    <div id="monu" class="two"></div>
+    <div id="monu" class="three"></div>
+    <div id="monu" class="four"></div>
+    <div id="monu" class="five"></div>
+</div>
+
+<a href="movingclients.html">Moving Clients</a>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>

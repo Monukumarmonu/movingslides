@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo moving</title>
+    <style>
+        body{
+            overflow-x: hidden ;
+        }
+
+        div img {
+            position: absolute;
+            border-radius: 20px;
+            left: -20vw;
+            width: 20vw;  
+            height: 100px;
+            /* transition: all 0.5s ease-in-out; */
+        }
+
+        #one{
+            z-index: 10;
+        }
+        #two{
+            z-index: 9;
+        }
+        #three{
+            z-index: 8;
+        }
+        #four{
+            z-index: 7;
+        }
+        #five{
+            z-index: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img id="one" src="/image/amazon.png" alt="" class="image">
+        <img id="two" src="/image/apple.png" alt=""  class="image">
+        <img id="three" src="/image/bulkfood.jpg" alt=""  class="image">
+        <img id="four" src="/image/google.jpg" alt=""  class="image">
+        <img id="five" src="/image/microsoft.jpg" alt=""  class="image">
+    </div>
+    <script src="moving.js"></script>
+</body>
+
+</html>
